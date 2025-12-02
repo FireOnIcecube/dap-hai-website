@@ -9,13 +9,16 @@ import TheWelcome from '../components/TheWelcome.vue'
 
   <main
     style="
-      display: grid;
-      place-items: center; /* 水平 + 垂直置中 */
+      display: flex;
+      justify-content: center; /* 水平置中 */
+      align-items: center; /* 垂直置中 */
       height: 100vh; /* 佔滿整個視窗高度 */
     "
   >
-    <h1>
-      DAP-HAI Research Center Advanced Human–AI Co-Adaptive Frameworks Website Under Construction
-    </h1>
+    <div style="text-align: center">
+      <h1>DAP-HAI Research Center</h1>
+      <h1>Advanced Human–AI Co-Adaptive Frameworks</h1>
+      <h1>Website Under Construction</h1>
+    </div>
   </main>
 </template>
