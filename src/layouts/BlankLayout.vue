@@ -1,6 +1,8 @@
 <script setup lang="ts"></script>
 <template>
   <div class="flex min-h-screen flex-col">
-    <router-view class="flex-1" />
+    <main class="flex flex-1">
+      <router-view class="flex-1" />
+    </main>
   </div>
 </template>
