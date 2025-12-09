@@ -7,7 +7,7 @@
   --color-base: #ffffff;
   --color-base-dark: #1f2937;
 
-  /* header / footer 背景 */
+  /* footer 背景 */
   --color-footer: #1f2937; /* light mode header/footer 反色 */
   --color-footer-dark: #1f2937; /* dark mode header/footer 使用 base */
 
