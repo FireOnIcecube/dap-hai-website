@@ -1,1 +1,28 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --surface: #ffffff;
+  --surface-dark: #1f2937;
+}
+
+:root {
+  --surface-current: var(--surface);
+}
+
+.dark {
+  --surface-current: var(--surface-dark);
+}
+
+@layer base {
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .bg-surface {
+    background-color: var(--surface-current);
+  }
+}
