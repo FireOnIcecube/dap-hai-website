@@ -12,6 +12,6 @@
       <router-view class="flex-1" />
     </main>
 
-    <footer class="bg-footer">Footer</footer>
+    <footer class="bg-footer py-2 text-center">Footer</footer>
   </div>
 </template>

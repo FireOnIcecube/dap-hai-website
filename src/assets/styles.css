@@ -63,9 +63,13 @@
 }
 
 @layer base {
-  :root {
+  body {
     font-family: var(--font-sans);
     font-weight: 400;
+  }
+
+  h1 {
+    font-size: var(--text-lg);
   }
 }
 
