@@ -2,34 +2,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@font-face {
-  font-family: 'NotoSansTC';
-  font-weight: 400;
-  font-style: normal;
-  src: url('./fonts/NotoSansTC-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'NotoSansTC';
-  font-weight: 500;
-  font-style: normal;
-  src: url('./fonts/NotoSansTC-Medium.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'NotoSansTC';
-  font-weight: 700;
-  font-style: normal;
-  src: url('./fonts/NotoSansTC-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'NotoSerifTC';
-  font-weight: 700;
-  font-style: normal;
-  src: url('./fonts/NotoSerifTC-Bold.woff2') format('woff2');
-}
-
 @theme inline {
   /* 主體內容背景 */
   --color-base: #ffffff;
@@ -68,8 +40,16 @@
     font-weight: 400;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-serif);
+  }
+
   h1 {
-    font-size: var(--text-lg);
+    font-size: var(--text-2xl);
   }
 }
 
@@ -91,4 +71,32 @@
   .border-divider {
     border-color: var(--color-divider-current);
   }
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/NotoSansTC-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./fonts/NotoSansTC-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./fonts/NotoSansTC-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./fonts/NotoSerifTC-Bold.woff2') format('woff2');
 }
