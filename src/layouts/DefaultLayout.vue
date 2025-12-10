@@ -1,8 +1,10 @@
 <template>
   <div class="flex min-h-dvh flex-col">
     <header class="border-divider flex justify-between border-b px-8 py-4">
-      <div></div>
-      <nav class="text-md flex gap-x-4 font-sans">
+      <div class="size-10">
+        <router-link :to="{ name: 'home' }"> <img src="@/assets/logo.svg" /></router-link>
+      </div>
+      <nav class="text-md mx-auto my-auto flex gap-x-4 font-sans">
         <router-link :to="{ name: 'home' }">Home</router-link>
         <router-link :to="{ name: 'about' }">About</router-link>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
