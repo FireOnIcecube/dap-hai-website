@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div class="flex min-h-svh flex-col">
     <header class="border-divider flex justify-between border-b px-8 py-4">
       <div></div>
       <nav class="text-md flex gap-x-4 font-sans">
