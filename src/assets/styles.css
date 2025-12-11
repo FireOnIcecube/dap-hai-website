@@ -2,19 +2,19 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  /* 主體內容背景 */
-  --color-base: #ffffff;
-  --color-base-dark: #1f2937;
+@theme {
+  /* Background */
+  --color-surface: #ffffff;
+  --color-layer: #1f2937;
 
-  /* footer 背景 */
-  --color-footer: #1f2937; /* light mode header/footer 反色 */
-  --color-footer-dark: #1f2937; /* dark mode header/footer 使用 base */
+  /* Border */
+  --color-line: #e5e7eb;
 
-  /* 分隔線 / border */
-  --color-divider: #e5e7eb; /* light mode border */
-  --color-divider-dark: #374151; /* dark mode border */
+  /* Foreground */
+  --color-ink: #111827;
+  --color-ink-inverse: #ffffff;
 
+  /* Font Families */
   --font-sans:
     'NotoSansTC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', sans-serif;
@@ -22,16 +22,15 @@
   --font-serif: 'NotoSerifTC', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
-:root {
-  --color-base-current: var(--color-base);
-  --color-footer-current: var(--color-footer);
-  --color-divider-current: var(--color-divider);
-}
-
-.dark {
-  --color-base-current: var(--color-base-dark);
-  --color-footer-current: var(--color-footer); /* header/footer 直接用 base */
-  --color-divider-current: var(--color-divider-dark);
+@layer theme {
+  * {
+    @variant dark {
+      --color-surface: #1f2937;
+      --color-layer: #1f2937;
+      --color-line: #374151;
+      --color-ink: #ffffff;
+    }
+  }
 }
 
 @layer base {
@@ -57,20 +56,6 @@
 }
 
 @layer utilities {
-  /* 主體內容背景 */
-  .bg-base {
-    background-color: var(--color-base-current);
-  }
-
-  /* header/footer 背景 */
-  .bg-footer {
-    background-color: var(--color-footer-current);
-  }
-
-  /* 分隔線 / border */
-  .border-divider {
-    border-color: var(--color-divider-current);
-  }
 }
 
 @font-face {
