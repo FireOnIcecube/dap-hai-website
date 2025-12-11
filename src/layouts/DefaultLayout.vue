@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-dvh flex-col">
-    <header class="border-divider flex justify-between border-b px-8 py-4">
+    <header class="border-line flex justify-between border-b px-8 py-4">
       <div class="size-10">
         <router-link :to="{ name: 'home' }"> <img src="@/assets/logo.svg" /></router-link>
       </div>
@@ -16,6 +16,8 @@
       <router-view class="flex-1" />
     </main>
 
-    <footer class="bg-footer py-4 text-center text-white">© 2025 DAP-HAI Research Center</footer>
+    <footer class="bg-layer text-ink-inverse py-4 text-center">
+      © 2025 DAP-HAI Research Center
+    </footer>
   </div>
 </template>
