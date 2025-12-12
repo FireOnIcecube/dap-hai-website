@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { useDarkMode } from '@/composables/useDarkMode'
-import { Icon } from '@iconify/vue'
 
 const { isDarkMode, toggleDark } = useDarkMode()
 </script>
@@ -8,7 +7,10 @@ const { isDarkMode, toggleDark } = useDarkMode()
   <div class="flex min-h-dvh flex-col">
     <header class="flex justify-between border-b px-8 py-4">
       <div class="size-10">
-        <router-link :to="{ name: 'home' }"> <img src="@/assets/logo.svg" /></router-link>
+        <router-link :to="{ name: 'home' }">
+          <img v-if="isDarkMode" src="@/assets/logo-dark.svg" alt="Dark Mode Logo" />
+          <img v-else src="@/assets/logo.svg" alt="Light Mode Logo" />
+        </router-link>
       </div>
       <nav class="text-md text-ink-muted mx-auto my-auto flex gap-x-8">
         <router-link :to="{ name: 'home' }" class="nav-link">Home</router-link>
@@ -19,14 +21,14 @@ const { isDarkMode, toggleDark } = useDarkMode()
         class="flex cursor-pointer items-center justify-center select-none"
         @click="() => toggleDark()"
       >
-        <Icon
-          :icon="
-            isDarkMode
-              ? 'material-symbols:light-mode-rounded'
-              : 'material-symbols:dark-mode-rounded'
-          "
+        <span
           class="size-8"
-        />
+          :class="
+            isDarkMode
+              ? 'icon-[material-symbols--light-mode-rounded]'
+              : 'icon-[material-symbols--dark-mode-rounded]'
+          "
+        ></span>
       </div>
     </header>
 

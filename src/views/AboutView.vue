@@ -1,10 +1,10 @@
 <script lang="ts" setup></script>
 <template>
-  <div class="container mx-auto flex flex-col items-center justify-center">
+  <div class="container mx-auto mt-10 flex flex-col items-center">
     <h1>About DAP-HAI</h1>
 
-    <section>
-      <p class="text-ink">
+    <section class="mt-6">
+      <p>
         The DAP-HAI Research Center is dedicated to developing advanced theoretical frameworks for
         Human–AI interaction. Our work focuses on **Distributed Adaptive Paradigms (DAP)**—a
         conceptual and architectural approach emphasizing multi-layer adaptivity, decentralized
