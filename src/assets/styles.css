@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin '@iconify/tailwind4';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -11,8 +12,9 @@
   --color-line: #3d3d3d;
 
   /* Foreground */
-  --color-ink: #111827;
-  --color-ink-inverse: #ffffff;
+  --color-ink: #000000;
+  --color-ink-muted: #5c5c5c;
+  --color-ink-layer: #dde2e3;
 
   /* Font Families */
   --font-sans:
@@ -29,6 +31,8 @@
       --color-layer: #1d2734;
       --color-line: #d9d9d9;
       --color-ink: #ffffff;
+      --color-ink-muted: #999999;
+      --color-ink-layer: #dde2e3;
     }
   }
 }
@@ -55,11 +59,27 @@
   }
 
   h1 {
+    font-size: var(--text-3xl);
+  }
+  h2 {
     font-size: var(--text-2xl);
   }
 }
 
 @layer components {
+  .nav-link {
+    font-family: var(--font-sans);
+    color: var(--color-ink-muted);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    @variant hover {
+      color: var(--color-ink);
+    }
+
+    @variant after {
+    }
+  }
 }
 
 @layer utilities {
