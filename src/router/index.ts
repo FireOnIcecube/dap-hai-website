@@ -5,6 +5,8 @@ import ContactView from '@/views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  linkActiveClass: 'text-ink',
+
   routes: [
     {
       path: '/',
@@ -12,12 +14,12 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/',
+      path: '/about',
       name: 'about',
       component: AboutView,
     },
     {
-      path: '/',
+      path: '/contact',
       name: 'contact',
       component: ContactView,
     },

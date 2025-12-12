@@ -11,8 +11,9 @@
   --color-line: #e5e7eb;
 
   /* Foreground */
-  --color-ink: #111827;
-  --color-ink-inverse: #ffffff;
+  --color-ink: #1f2c47;
+  --color-ink-muted: #49555a;
+  --color-ink-layer: #dde2e3;
 
   /* Font Families */
   --font-sans:
@@ -48,11 +49,28 @@
   }
 
   h1 {
+    font-size: var(--text-3xl);
+  }
+  h2 {
     font-size: var(--text-2xl);
   }
 }
 
 @layer components {
+  .nav-link {
+    font-family: var(--font-sans);
+    color: var(--color-ink-muted);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color;
+    @variant hover {
+      color: var(--color-ink);
+    }
+
+    @variant after {
+    }
+  }
 }
 
 @layer utilities {
