@@ -1,48 +1,67 @@
-# dap-hai-website
+# ✨ DAP-HAI.org Website Github Repository | Distributed Adaptive Paradigms for Advanced Human–AI Interaction
 
-This template should help get you started developing with Vue 3 in Vite.
+**This repository contains the source code for the official DAP-HAI Research Center website: [dap-hai.org](https://dap-hai.org).**
 
-## Recommended IDE Setup
+DAP-HAI is an independent research initiative focused on the core challenges and opportunities in **human–AI collaborative reasoning**, **interaction architectures**, and the **formal analysis of large-model behavior**.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Our work centers on exploring how human cognition and powerful language models can be effectively aligned through structured experimental methods, reproducible analytical workflows, and the creation of usable, transparent models.
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🔬 Research Themes
 
-## Type Support for `.vue` Imports in TS
+We organize our work around three interconnected themes:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### 1. Human–AI Interaction & Cognitive Interfaces
 
-## Customize configuration
+Focuses on the practical and cognitive aspects of collaboration.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Interaction protocols** for high-bandwidth co-reasoning.
+- **Adaptive task flows** and structured decision models.
+- **Error-pattern mapping** and conversational failure taxonomy.
 
-## Project Setup
+### 2. Model Behavior & Failure Analysis
 
-```sh
-pnpm install
-```
+Dedicated to rigorously understanding the internal dynamics and limitations of large models.
 
-### Compile and Hot-Reload for Development
+- Controlled-prompting experiments and comparative behavior logging.
+- Analysis of **breakdown modes**, stability issues, and reasoning drift under reproducible conditions.
 
-```sh
-pnpm dev
-```
+### 3. Formal and Semi-Formal Modeling
 
-### Type-Check, Compile and Minify for Production
+Developing structural and analytical frameworks for complex interactions.
 
-```sh
-pnpm build
-```
+- Creating **task-flow schematics**, diagrams, and lightweight structural models.
+- Representing decisions, actions, and event sequences to integrate insights from AI, cognition, and systems theory.
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-pnpm lint
-```
+## 🛠️ Methods & Approach
+
+Our methodology is grounded in rigorous, small-scale experimentation and structural analysis:
+
+- Designing **small, reproducible experiments** with language models.
+- Logging, comparing, and clustering model behavior signatures.
+- Building **diagrams, taxonomies, and structural schemata** to map complex processes.
+- Translating complex insights into **clear, usable models** for practitioners and researchers.
+- Iterative refinement of human–AI collaboration templates.
+
+---
+
+## 🔭 Current Work Highlights
+
+- Modeling how agents select and sequence actions in complex tasks.
+- Identifying recurring model-behavior signatures across different prompts and models.
+- Designing reusable **interaction frameworks** for general research workflows.
+- Developing early-stage tools for structured reasoning processes.
+
+---
+
+## 🔗 Find Out More
+
+| Resource                                    | Link                                                                           |
+| :------------------------------------------ | :----------------------------------------------------------------------------- |
+| **Official Website** (You are here!)        | [https://dap-hai.org](https://dap-hai.org)                                     |
+| **ORCID** (Lead Researcher/Organization ID) | [https://orcid.org/0000-0007-1766-4515](https://orcid.org/0000-0007-1766-4515) |
+| **Hugging Face** (Model/Dataset Repository) | [https://huggingface.co/](https://huggingface.co/)                             |
+| **Contact**                                 | [paradigms@dap-hai.org](mailto:paradigms@dap-hai.org)                          |
