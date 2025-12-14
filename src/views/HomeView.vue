@@ -54,28 +54,22 @@ const { isDarkMode } = useDarkMode()
       <div>
         <h4>🕒 Status & Continuity</h4>
         <p class="text-ink-muted">
-          Research at DAP-HAI is organized through layered conceptual and structural frameworks
-          addressing Human–AI interaction, cognition, and adaptive systems. The center approaches
-          these problems through theoretical analysis and methodological development rather than
-          product-oriented design.
+          Active research initiative established in 2025, currently focused on early-stage
+          consolidation of theoretical and methodological frameworks.
         </p>
       </div>
       <div>
         <h4>🎯 Intended Audience</h4>
         <p class="text-ink-muted">
-          Research at DAP-HAI is organized through layered conceptual and structural frameworks
-          addressing Human–AI interaction, cognition, and adaptive systems. The center approaches
-          these problems through theoretical analysis and methodological development rather than
-          product-oriented design.
+          This site is intended for researchers and practitioners working on Human–AI interaction,
+          cognitive systems, and related theoretical or methodological problems.
         </p>
       </div>
       <div>
         <h4>🧪 Scope Clarification</h4>
         <p class="text-ink-muted">
-          Research at DAP-HAI is organized through layered conceptual and structural frameworks
-          addressing Human–AI interaction, cognition, and adaptive systems. The center approaches
-          these problems through theoretical analysis and methodological development rather than
-          product-oriented design.
+          DAP-HAI focuses on theory- and method-driven research and does not operate as a product
+          lab or application-oriented development group.
         </p>
       </div>
     </section>
