@@ -9,6 +9,13 @@
       <div class="h-0.5 grow border-t-4 border-b-4 border-double"></div>
     </div>
 
+    <section>
+      <p class="text-ink-muted text-md mt-4">
+        DAP-HAI focuses on theory- and method-driven research and does not operate as a product lab
+        or application-oriented development group.
+      </p>
+    </section>
+
     <section class="mt-6">
       <p class="text-lg leading-loose">
         This page outlines the research structure of DAP-HAI to provide contextual grounding for
@@ -22,6 +29,7 @@
 
     <section class="mt-6">
       <h2>Research</h2>
+
       <p class="text-lg leading-loose">
         DAP-HAI focuses on the development of new theoretical foundations for Human–AI interaction.
         Our research is organized into three structural layers, each forming a component of the
