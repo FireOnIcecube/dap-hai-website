@@ -1,12 +1,25 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useDarkMode } from '@/composables/useDarkMode'
+
+const { isDarkMode } = useDarkMode()
+</script>
 
 <template>
   <div class="bg-base container mx-auto flex flex-col justify-center">
-    <img
-      src="@/assets/logo.svg"
-      alt="DAP HAI Logo"
-      class="mx-auto h-auto w-full max-w-64 md:max-w-80 lg:max-w-96"
-    />
+    <div class="my-12">
+      <img
+        v-if="isDarkMode"
+        src="@/assets/logo-dark.svg"
+        alt="Dark Mode Logo"
+        class="mx-auto h-auto w-full max-w-64 md:max-w-80 lg:max-w-96"
+      />
+      <img
+        v-else
+        src="@/assets/logo.svg"
+        alt="Light Mode Logo"
+        class="mx-auto h-auto w-full max-w-64 md:max-w-80 lg:max-w-96"
+      />
+    </div>
 
     <div class="flex items-center">
       <div class="grow border-t border-gray-400"></div>
@@ -16,7 +29,7 @@
       <div class="grow border-t border-gray-400"></div>
     </div>
 
-    <section class="text-center">
+    <section class="mt-6 text-center">
       <h1>DAP-HAI Research Center</h1>
       <h2>Distributed Adaptive Paradigms for Advanced Human–AI Interaction</h2>
       <p class="text-ink-muted mt-2">
@@ -25,9 +38,9 @@
       </p>
     </section>
 
-    <hr class="border-line my-6 border-t" />
+    <hr class="border-line mt-12 border-t" />
 
-    <section class="my-6 space-y-4 text-lg">
+    <section class="mt-6 space-y-4 text-lg">
       <div>
         <h4>🧭 Research Structure</h4>
         <p class="text-ink-muted">
