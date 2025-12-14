@@ -36,7 +36,7 @@ const { isDarkMode, toggleDark } = useDarkMode()
       <router-view class="flex-1" />
     </main>
 
-    <footer class="bg-layer text-ink-layer border-t py-4 text-center">
+    <footer class="bg-layer text-ink-layer mt-12 border-t py-4 text-center">
       © 2025 DAP-HAI Research Center
     </footer>
   </div>
